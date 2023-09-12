@@ -19,21 +19,21 @@ namespace dotnetapp.Models
             _dbContext = dbContext;
         }
         public IQueryable<Product> GetProductList()
-        {
-            var query = _dbContext.Products.ToList();
-           return query;
+        {            
+           return _dbContext.Products;
         }
         public bool AddProduct(Product product)
         {
-            Products.add(product);
+            _dbContext.Products.Add(product);
             _dbContext.SaveChanges();
             return true;
         }
 
         public bool DeleteProduct(int Id)
         {
-            var deleteProduct = Products.Find(id==Id);
-            Products.Remove(deleteProduct);
+            Product deleteProduct = _dbContext.Products.Find(Id);
+            _dbContext.Products.Remove(deleteProduct);
+            _dbContext.SaveChanges();
             return true;
         }
     }
