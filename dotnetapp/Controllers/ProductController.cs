@@ -28,12 +28,12 @@ namespace dotnetapp.Controllers
 
     public bool AddProduct(Product newProduct)
     {         
-       return AddProduct(newProduct);            
+       return productService.AddProduct(newProduct);            
     }   
 
     public bool DeleteProduct (int id)
     {
-   return DeleteProduct(id);
+   return productService.DeleteProduct(id);
     }
     }
 }

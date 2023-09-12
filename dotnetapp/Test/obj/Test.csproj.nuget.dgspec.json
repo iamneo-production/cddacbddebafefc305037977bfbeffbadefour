@@ -1,9 +1,87 @@
 {
   "format": 1,
   "restore": {
-    "/home/coder/project/workspace/dotnetapp/dotnetapp.csproj": {}
+    "/home/coder/project/workspace/dotnetapp/Test/Test.csproj": {}
   },
   "projects": {
+    "/home/coder/project/workspace/dotnetapp/Test/Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/coder/project/workspace/dotnetapp/Test/Test.csproj",
+        "projectName": "Test",
+        "projectPath": "/home/coder/project/workspace/dotnetapp/Test/Test.csproj",
+        "packagesPath": "/home/coder/.nuget/packages/",
+        "outputPath": "/home/coder/project/workspace/dotnetapp/Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/coder/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/coder/project/workspace/dotnetapp/dotnetapp.csproj": {
+                "projectPath": "/home/coder/project/workspace/dotnetapp/dotnetapp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/coder/project/workspace/dotnetapp/dotnetapp.csproj": {
       "version": "1.0.0",
       "restore": {
