@@ -5,7 +5,7 @@ namespace dotnetapp.Models
 {
     public interface IProductService
     {
-        puGetProductList();blic IQueryable<Product> 
+        public IQueryable<Product> GetProductList();
         public bool AddProduct(Product product);
         public bool DeleteProduct(int Id);
     }
@@ -20,7 +20,7 @@ namespace dotnetapp.Models
         }
         public IQueryable<Product> GetProductList()
         {
-           return null;
+           return _dbContext.Products;
         }
         public bool AddProduct(Product product)
         {
